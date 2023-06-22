@@ -1,0 +1,265 @@
+@font-face {
+    font-family: "Plavsky";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../font/gundam/Plavsky.otf") format("otf");
+}
+@font-face {
+    font-family: "Plavsky Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../font/gundam/Plavsky\ Bold.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Plavsky Italic";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../font/gundam/Plavsky\ Italic.otf") format("otf");
+}
+
+
+@font-face {
+    font-family: "Plavsky Bold Italic";
+    font-style: italic;
+    font-weight: bold;
+    src: url("../font/gundam/Plavsky\ Bold\ Italic.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Plavsky Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: condensed;
+    src: url("../font/gundam/Plavsky\ Condensed.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Plavsky Condensed Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: condensed;
+    src: url("../font/gundam/Plavsky\ Condensed\ Bold.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Plavsky Condensed Italic";
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: condensed;
+    src: url("../font/gundam/Plavsky\ Condensed\ Italic.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Plavsky Condensed Bold Italic";
+    font-style: italic;
+    font-weight: bold;
+    font-stretch: condensed;
+    src: url("../font/gundam/Plavsky\ Condensed\ Bold\ Italic.otf") format("otf");
+}
+
+
+body {
+    font-family: "Plavsky","Plavsky Bold","Plavsky Italic","Plavsky Bold Italic","Plavsky Condensed","Plavsky Condensed Bold","Plavsky Condensed Italic","Plavsky Condensed Bold Italic",sans-serif;
+    color : white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.flex-hidden {
+    display: none;
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+}
+
+#weather {
+    display: flex;
+    justify-content: space-between;
+    width:100vw;
+    position: absolute;
+    top:10px;
+}
+
+#weather span {
+    font-size: 25px;
+}
+
+#weather span:first-child {
+    padding-left: 20px;
+}
+
+#weather span:last-child {
+    padding-right: 20px;
+}
+
+
+#bgImage {
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100vw;
+        height:100vh;
+        z-index: -1;
+}
+
+#clock {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    font-size: 150px;
+}
+
+#greeting {
+    margin-top: 0;
+    margin-bottom: 8vh;
+    font-size: 60px;
+}
+
+#todo-form span {
+    margin-bottom: 2vh;
+    font-size: 35px;
+}
+
+#todo-form input{
+    width: 550px;
+    border:none;
+    background-color: rgba(0,0,0,0);
+    font-size: 35px;
+    border-bottom: 2px ridge white;
+    text-align: center;
+    color: white;
+}
+
+#todo-form input:focus,
+#login-form input:focus {
+    outline: none;
+}
+
+
+#login-form input::placeholder {
+    color : rgba(255, 255, 255, 0.5);
+}
+
+#login-form input:first-child,
+#login-form input:nth-child(2){
+    width: 30vw;
+    border:none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(255,255,255,0.7);
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#login-form input:first-child {
+    margin-top: 20px;
+}
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+#login-form input:last-child{
+    height: 45px;
+    width: 30vw;
+    background-color: rgba(255, 255, 255,0.7);
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    border: none;
+    padding: 10px, 0;
+    margin-top: 5px;
+    margin-left: 1px;
+    border-radius: 5px;
+}
+
+
+#todo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo-list {
+    width: 550px;
+    height: 28vh;
+    margin-top: 5px;
+    padding:5px;
+    overflow: scroll;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    font-size: 25px;
+}
+
+#todo-list span {
+    width: 85%;
+}
+
+.success {
+    text-decoration: line-through;
+    color:gray;
+}
+
+
+#quote {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    bottom: 10px;
+}
+
+#quote span:first-child  {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#quote span:last-child  {
+   font-size: 20px;
+   
+}
+
+.text-shadow {
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#welcome span:first-child {
+    margin-top: 8vh;
+    font-size: 70px;
+}
+
+#welcome span:last-child {
+    font-size: 50px;
+    margin-bottom: 8vh;
+}
